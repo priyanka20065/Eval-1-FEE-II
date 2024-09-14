@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Quiz</title>
+    <link rel="stylesheet" href="dstyles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="animate__animated animate__fadeInDown">Depression Test</h1>
+        <form id="quizForm">
+            <div class="question">
+               <h2> <p>1. Have you been feeling down, depressed, or hopeless?</p></h2>
+                <label><input type="radio" name="q1" > Not at all</label>
+                <label><input type="radio" name="q1" > Several days</label>
+                <label><input type="radio" name="q1" > More than half the days</label>
+                <label><input type="radio" name="q1" > Nearly every day</label>
+            </div>
+            <div class="question">
+               <h2> <p>2. Have you had little interest or pleasure in doing things?</p></h2>
+                <label><input type="radio" name="q2" > Not at all</label>
+                <label><input type="radio" name="q2" > Several days</label>
+                <label><input type="radio" name="q2"> More than half the days</label>
+                <label><input type="radio" name="q2" > Nearly every day</label>
+            </div>
+            <div class="question">
+                <h2><p>3. Have you experienced trouble falling or staying asleep, or sleeping too much?</p></h2>
+                <label><input type="radio" name="q3" > Not at all</label>
+                <label><input type="radio" name="q3"  >everal days</label>
+                <label><input type="radio" name="q3" > More than half the days</label>
+                <label><input type="radio" name="q3" > Nearly every day</label>
+            </div>
+            <div class="question">
+                <h2><p>4. Have you been feeling tired or having little energy?</p></h2>
+                <label><input type="radio" name="q4" > Not at all</label>
+                <label><input type="radio" name="q4" > Several days</label>
+                <label><input type="radio" name="q4" > More than half the days</label>
+                <label><input type="radio" name="q4" > Nearly every day</label>
+            </div>
+            <div class="question">
+                <h2><p>5. Have you had a poor appetite or been overeating?</p></h2>
+                <label><input type="radio" name="q5" > Not at all</label>
+                <label><input type="radio" name="q5" > Several days</label>
+                <label><input type="radio" name="q5" > More than half the days</label>
+                <label><input type="radio" name="q5" > Nearly every day</label>
+            </div>
+            <div class="question">
+               <h2> <p>6. Have you been feeling bad about yourself — or that you are a failure or have let yourself or your family down?</p></h2>
+                <label><input type="radio" name="q6" > Not at all</label>
+                <label><input type="radio" name="q6" > Several days</label>
+                <label><input type="radio" name="q6" > More than half the days</label>
+                <label><input type="radio" name="q6" > Nearly every day</label>
+            </div>
+            <div class="question">
+               <h2> <p>7. Have you had trouble concentrating on things, such as reading the newspaper or watching television?</p></h2>
+                <label><input type="radio" name="q7" > Not at all</label>
+                <label><input type="radio" name="q7" > Several days</label>
+                <label><input type="radio" name="q7" > More than half the days</label>
+                <label><input type="radio" name="q7" > Nearly every day</label>
+            </div>
+            <div class="question">
+               <h2> <p>8. Have you been moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual?</p></h2>
+                <label><input type="radio" name="q8" > Not at all</label>
+                <label><input type="radio" name="q8" > Several days</label>
+                <label><input type="radio" name="q8"> More than half the days</label>
+                <label><input type="radio" name="q8" > Nearly every day</label>
+            </div>
+            <div class="question">
+               <h2> <p>9. Have you had thoughts that you would be better off dead, or thoughts of hurting yourself in some way?</p></h2>
+                <label><input type="radio" name="q9" > Not at all</label>
+                <label><input type="radio" name="q9"> Several days</label>
+                <label><input type="radio" name="q9" > More than half the days</label>
+                <label><input type="radio" name="q9"> Nearly every day</label>
+            </div>
+            <div class="question">
+                <h2><p>10. Have you found it difficult to cope with the stress and demands of daily life?</p></h2>
+                <label><input type="radio" name="q10" > Not at all</label>
+                <label><input type="radio" name="q10" > Several days</label>
+                <label><input type="radio" name="q10" > More than half the days</label>
+                <label><input type="radio" name="q10" > Nearly every day</label>
+            </div>
+            <button type="button">Submit</button>
+        </form>
+       
+    </div>
+</body>
+</html>
+
+
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/474x/44/31/25/4431252ea84a5b23f8653815ab94e6a7.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color:rgb(224, 193, 179);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #563123;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    animation: fadeInDown;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+}
+
+.question h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 5%;
+    color: rgb(59, 53, 18);
+}
+
+label {
+    color: rgb(159, 107, 88);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+   
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #792306af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0b68c;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .question h2 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
