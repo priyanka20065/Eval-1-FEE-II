@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Story</title>
+    <script src="https://kit.fontawesome.com/d688ab46b0.js"></script>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    .image {
+        width: 100%;
+        max-height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-container {
+        background-color: #fff4e6;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    .form-image {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px; 
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+        display: block;
+        margin-bottom: 8px;
+        text-align: left; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background-color: #f9f9f9;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        width: 40%;
+        padding: 12px;
+        background-color: #ffcba4;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: white;
+    }
+    
+    footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer {
+    background: linear-gradient(rgb(157, 208, 253),#a7a5a5);;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+}
+
+.footer .menu li {
+    display: inline-block;
+    margin: 0.7em;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #009688;
+}
+
+footer .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .media-icons {
+    margin: 1.5em 0;
+    padding: 2em;
+}
+
+.footer .media-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .media-icons a {
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer .media-icons a:hover {
+    color: #009688;
+}
+
+.brand {
+    font-size: 1.8em;
+    font-weight:400;
+    margin-bottom: 1em;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+}
+    
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="story.png" alt="Share Your Story Image" style="width: 100%;">
+    </div>
+    <h1>Share Your Personal Stories Of Triumph</h1>
+    
+    <div class="form-container">  
+        <h2>Share Your Story</h2>
+        <form action="#" method="POST">
+            <label for="name">Your Name (required)</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email (required)</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="story">Share Your Story</label>
+            <textarea id="story" name="story" rows="6"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer1">
+            <a href="#" class="brand">Mind Cure</a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <ul class="media-icons">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p>Mind Cure is dedicated to helping individuals achieve mental wellness through personalized and support. Explore our platform to nurture your mental health</p>            
+        </div>
+    </footer>
+</body>
+</html>
