@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Test</title>
+    <link rel="stylesheet" href="astyles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="animate__animated animate__fadeInDown">Anxiety Test</h1>
+        <form>
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>1. How often do you feel nervous, anxious, or on edge?</h2>
+                <label>
+                    <input type="radio" name="q1" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q1" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q1" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q1" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q1" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>2. Do you find it difficult to relax?</h2>
+                <label>
+                    <input type="radio" name="q2" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q2" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q2" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q2" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q2" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h2>3. How often do you experience feelings of panic or fear?</h2>
+                <label>
+                    <input type="radio" name="q3" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q3" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q3">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q3" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q3">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h2>4. Do you feel overwhelmed by everyday tasks?</h2>
+                <label>
+                    <input type="radio" name="q4" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q4" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q4" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q4" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q4" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h2>5. How often do you worry excessively about different things?</h2>
+                <label>
+                    <input type="radio" name="q5">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q5">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q5" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q5">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q5" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h2>6. Do you find yourself avoiding situations that make you anxious?</h2>
+                <label>
+                    <input type="radio" name="q6" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q6" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q6" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q6" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q6" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h2>7. How often do you have trouble sleeping because of your anxiety?</h2>
+                <label>
+                    <input type="radio" name="q7" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q7" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q7" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q7" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q7" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h2>8. Do you experience physical symptoms such as sweating, trembling, or a rapid heartbeat when anxious?</h2>
+                <label>
+                    <input type="radio" name="q8">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q8" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q8" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q8" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q8" >
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h2>9. How often do you have difficulty concentrating because of your anxiety?</h2>
+                <label>
+                    <input type="radio" name="q9" >
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q9" >
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q9" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q9" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q9">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h2>10. Do you feel a sense of dread or that something bad is going to happen?</h2>
+                <label>
+                    <input type="radio" name="q10">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q10">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q10" >
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q10" >
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q10">
+                    Always
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/474x/ad/f8/48/adf8483dafea80a3ac77f77002ba1981.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color:rgb(241, 199, 220);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #56234b;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    animation: fadeInDown;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+}
+
+.question h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 5%;
+    color: rgb(76, 4, 68);
+}
+
+label {
+    color: rgb(161, 81, 144);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+   
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #966076;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 5%;
+}
+
+button:hover {
+    background-color: #471f38;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .question h2 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
