@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cv.css">
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+</head>
+<body>
+   
+    <div class ="container">
+        
+        
+        <form action="#" autocomplete="on">
+            <h1 class = "form-titles">Application Job For Doctor </h1>
+            <br>
+            <!--fieldset-used for group of related data-->
+
+            <h1 class="form-title">Personal Information </h1>
+            <div class="main-user-info">
+
+                <div class ="user-input-box">
+                    <label for ="firstname">First Name </label>
+                    <input type="text" id="firstName"
+                    name="firstName"
+                    placeholder="Enter your First Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="lastname">Last Name </label>
+                    <input type="text" id="lastName"
+                    name="lastName"
+                    placeholder="Enter your Last Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="fathername">Father's Name </label>
+                    <input type="text" id="fathername"
+                    name="fathername"
+                    placeholder="Enter your Father's Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="mothername">Mother's Name </label>
+                    <input type="text" id="mothername"
+                    name="mothername"
+                    placeholder="Enter your Mother's Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="phoneNumber">Phone-Number</label>
+                    <input type="tel" id="phoneNumber"
+                    name="phoneNumber" pattern="[0-9]{5}-[0-9]{5}" maxlength="10"
+                    placeholder="Enter your PhoneNumber"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="email">E-mail</label>
+                    <input type="email" id="email"
+                    name="email"
+                    placeholder="Enter your e-mail"/>
+                </div>
+                
+                <div class ="user-input-box">
+                    <label for ="dob">Date of Birth</label>
+                    <input type="date" id="dob"
+                    name="dob" max="01-01-2007"
+                    placeholder="Enter your Date of Birth"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Address1">Address 1 </label>
+                    <input type="text" id="Address1"
+                    name="Address1"
+                    placeholder="Street"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Address2">Address 2 </label>
+                    <input type="text" id="Address2"
+                    name="Address2"
+                    placeholder="City"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Address3">Address 3 </label>
+                    <input type="number" id="Address3"
+                    name="Address3" size="6" maxlength="6"
+                    placeholder="Postal Code"/>
+                </div> 
+        
+            <div class="gender">
+                <span class="gender-title"> Gender</span>
+                <div class="gender-category">
+                    <input type ="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type ="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type ="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            </div>
+            </fieldset>
+
+            <h1 class="form-title">Professional Information </h1>
+            <div class="main-user-info">
+                <fieldset>
+                    <legend> Undergraduate Degree</legend>
+
+                <div class ="user-input-box">
+                    <label for ="Inst1"> Institution Name  </label>
+                    <input type="text" id="Inst1"
+                    name="Inst1"
+                    placeholder="Institution Name"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Loc1"> Location  </label>
+                    <input type="text" id="Loc1"
+                    name="Loc1"
+                    placeholder="Location"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="year1"> Graduation year  </label>
+                    <input type="number" id="year1"
+                    name="year1" size="4" maxlength="4"
+                    placeholder="Graduation Year"/>
+                </div>
+        </fieldset>
+
+        <fieldset>
+                    <legend> Postgraduate Degree</legend>
+
+                <div class ="user-input-box">
+                    <label for ="Inst2"> Institution Name  </label>
+                    <input type="text" id="Inst2"
+                    name="Inst2"
+                    placeholder="Institution Name"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Loc2"> Location  </label>
+                    <input type="text" id="Loc3"
+                    name="Loc3"
+                    placeholder="Location"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="year2"> Graduation year  </label>
+                    <input type="number" id="year2"
+                    name="year2" size="4" maxlength="4"
+                    placeholder="Graduation Year"/>
+                </div>
+        </fieldset>
+
+        <fieldset>
+                    <legend>Residency Program</legend>
+
+                <div class ="user-input-box">
+                    <label for ="Inst3"> Institution Name  </label>
+                    <input type="text" id="Inst3"
+                    name="Inst3"
+                    placeholder="Institution Name"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Loc3"> Location  </label>
+                    <input type="text" id="Loc3"
+                    name="Loc3"
+                    placeholder="Location"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="year3"> Graduation year  </label>
+                    <input type="number" id="year3"
+                    name="year3" size="4" maxlength="4"
+                    placeholder="Graduation Year"/>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> Fellowship  Program</legend>
+
+        <div class ="user-input-box">
+            <label for ="Inst4"> Institution Name  </label>
+            <input type="text" id="Inst4"
+            name="Inst4"
+            placeholder="Institution Name"/>
+        </div>
+        <div class ="user-input-box">
+            <label for ="Loc4"> Location  </label>
+            <input type="text" id="Loc4"
+            name="Loc4"
+            placeholder="Location"/>
+        </div>
+        <div class ="user-input-box">
+            <label for ="year4"> Graduation year  </label>
+            <input type="number" id="year4"
+            name="year4" size="4" maxlength="4"
+            placeholder="Graduation Year"/>
+        </div>
+</fieldset>
+
+<fieldset>
+    <legend> State Medical license</legend>
+
+<div class ="user-input-box">
+    <label for ="st"> State</label>
+    <input type="text" id="st"
+    name="st"
+    placeholder="State"/>
+</div>
+<div class ="user-input-box">
+    <label for ="Lic"> License Number </label>
+    <input type="number" id="Lic"
+    name="Lic"
+    placeholder="License Number"/>
+</div>
+<div class ="user-input-box">
+    <label for ="year5"> Expiration year  </label>
+    <input type="number" id="year5"
+    name="year5" size="4" maxlength="4"
+    placeholder="Expiration Year"/>
+</div>
+</fieldset>
+<fieldset>
+    <legend>Areas of Expertise  </legend>
+    <textarea id = "Area"
+    name="Area" rows="18" cols="40"
+    placeholder="Your Experience or any other Soft skills "></textarea>
+</fieldset>
+
+<div class ="user-input-box">
+    <label for ="proof"> Please Attach all your proofs  </label>
+    <input type="file" id="proof"
+    name="proof" multiple >
+</div>
+
+<div class ="user-input-box">
+    <label for="work">Availabilty</label>
+    <select name = "Work-time" id="work">
+    <option value="Full-time">Full-Time</option>
+    <option value="Half-time">Half-Time</option>
+    <option value="Shifts" selected>Shifts</option>
+  </select>
+  </div>
+  <div class="form-submit-btn">
+    <input type="reset" value="Reset">
+</div>
+ 
+            <div class = "user-input-box"></div>
+            <div class="form-submit-btn">
+                <input type="submit" value="Apply">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
+
+
+<!--1. first name 
+2. last Name
+3. Father's name
+4.Mother Name
+5. Dob 
+6.gender
+7. Phone no
+8. e-mail
+9.years of experience 
+10.Address city state 
+11.
+Undergraduate Degree
+12. Medical Program(Institution ,location,graduation year)
+13.Residency Program (speciality,institution location completion year )
+14. Fellowship Program 
+16.State licnce(state ,license no,expiration date )
+15. Soft-skills 
+17. DEA Registration(DEA no.,expiration date)
+18.Previous Position 
+19. Areas of expertise 
+20. Proofs 
+Preferred Work Schedule: Full-time, part-time, shifts, etc.
+Location Preferences: If the position is offered in multiple locations
+12. Additional Questions (if relevant)
+Questions about handling specific clinical situations or ethical dilemmas
+Interest in participating in research, teaching, or administrative roles
+add reset button <input type="reset" value "Reset">
+
