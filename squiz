@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress Test</title>
+    <link rel="stylesheet" href="sstyles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="animate__animated animate__fadeInDown">Stress Test</h1>
+        <form>
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>1. How often do you feel overwhelmed by responsibilities?</h2>
+                <label>
+                    <input type="radio" name="q1">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q1">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q1">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q1">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q1">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>2. Do you find it difficult to manage your time effectively?</h2>
+                <label>
+                    <input type="radio" name="q2">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q2">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q2">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q2">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q2">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h2>3. How often do you feel tense or unable to relax?</h2>
+                <label>
+                    <input type="radio" name="q3">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q3">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q3">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q3">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q3">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h2>4. Do you have difficulty sleeping due to stress?</h2>
+                <label>
+                    <input type="radio" name="q4">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q4">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q4">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q4">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q4">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h2>5. How often do you feel irritable or short-tempered?</h2>
+                <label>
+                    <input type="radio" name="q5">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q5">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q5">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q5">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q5">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h2>6. Do you find it hard to concentrate due to stress?</h2>
+                <label>
+                    <input type="radio" name="q6">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q6">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q6">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q6">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q6">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h2>7. How often do you experience physical symptoms such as headaches, muscle tension, or upset stomach due to stress?</h2>
+                <label>
+                    <input type="radio" name="q7">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q7">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q7">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q7">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q7">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h2>8. Do you feel overwhelmed by the demands of your job or daily life?</h2>
+                <label>
+                    <input type="radio" name="q8">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q8">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q8">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q8">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q8">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h2>9. How often do you feel that you have too much to do and not enough time to do it?</h2>
+                <label>
+                    <input type="radio" name="q9">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q9">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q9">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q9">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q9">
+                    Always
+                </label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h2>10. Do you feel that stress is negatively affecting your health?</h2>
+                <label>
+                    <input type="radio" name="q10">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="q10">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="q10">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q10">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="q10">
+                    Always
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/474x/fb/2d/ed/fb2ded8db27430b5c871a15f54dc9c87.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color:rgb(190, 201, 243);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1b2d4d;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    animation: fadeInDown;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+}
+
+.question h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 5%;
+    color: rgb(55, 30, 154);
+}
+
+label {
+    color: rgb(108, 108, 161);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+   
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #3a23adaf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7ca2c3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .question h2 {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
