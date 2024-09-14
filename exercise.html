@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Based Interactive Card Deck</title>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background-image: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #ff9a9e);
+            overflow-y: scroll; 
+        }
+        .deck {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 100%;
+            max-height: 90vh; 
+           
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        .card {
+            width: 250px;
+            height: 370px;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.6s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card-front {
+            background: #fff;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .card-back {
+            background: #f0f0f0;
+            color: #0a0a0a;
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 15px;
+            overflow: auto;
+            font-family: 'Courgette', cursive;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+        
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="https://raw.githubusercontent.com/Priyanshu20048/Eval-1-FEE-II/main/mainpage/health.jpeg" alt="" height="40px" width="40px"> &nbsp; <b><big>Mind Cure</big></b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class= "collapse navbar-collapse" id="navbarSupportedContent"></div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a  href="#" class="nav-link"
+                   >
+                    Login
+                </a>
+                
+            </li>
+        </ul>
+    </div>
+</nav>
+    <h1>Select a Yoga Pose Card</h1>
+    <div class="deck">
+       
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/2a/97/b4/2a97b4590536f679625d63adfc439ffb.jpg" alt="Yoga Pose 1">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Mountain Pose</p>
+                    <p>Step 1: Stand tall with feet together.</p>
+                    <p>Step 2: Press your weight evenly across your feet.</p>
+                    <p>Step 3: Reach your arms overhead.</p>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/69/bb/63/69bb634ea74b3017e7bc7f35f93f3d9f.jpg" alt="Yoga Pose 2">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Downward Dog</p>
+                    <p>Step 1: Start on your hands and knees.</p>
+                    <p>Step 2: Lift your hips towards the ceiling.</p>
+                    <p>Step 3: Straighten your legs and hold.</p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/564x/20/3a/14/203a14642b5bb4d5bf404cb35d32d8fa.jpg" alt="Yoga Pose 3">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Warrior I</p>
+                    <p>Step 1: Step one foot forward into a lunge.</p>
+                    <p>Step 2: Raise your arms above your head.</p>
+                    <p>Step 3: Hold and breathe deeply.</p>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/e6/23/6e/e6236e197f5a9256eadc8351c0611adc.jpg" alt="Yoga Pose 4">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Tree Pose</p>
+                    <p>Step 1: Stand on one foot.</p>
+                    <p>Step 2: Place the other foot on your inner thigh.</p>
+                    <p>Step 3: Bring your hands to prayer position.</p>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/93/94/65/93946533091b00a8f81d46c06a090d51.jpg" alt="Yoga Pose 5">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Child's Pose</p>
+                    <p>Step 1: Kneel on the floor.</p>
+                    <p>Step 2: Sit back on your heels.</p>
+                    <p>Step 3: Lower your torso between your knees.</p>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/1b/e3/cc/1be3cc76c5829841e3429ed3a227f65f.jpg" alt="Yoga Pose 6">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Bridge Pose</p>
+                    <p>Step 1: Lie on your back with knees bent.</p>
+                    <p>Step 2: Lift your hips towards the ceiling.</p>
+                    <p>Step 3: Hold and breathe deeply.</p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/80/7d/48/807d487b9dc3df11d623b952d793669b.jpg" alt="Yoga Pose 7">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Cobra Pose</p>
+                    <p>Step 1: Lie on your stomach.</p>
+                    <p>Step 2: Place your hands under your shoulders.</p>
+                    <p>Step 3: Lift your chest off the floor.</p>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/7b/5a/9d/7b5a9df8b0155d01455abe5afc58d9f4.jpg" alt="Yoga Pose 8">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Seated Forward Bend</p>
+                    <p>Step 1: Sit with legs extended.</p>
+                    <p>Step 2: Reach forward to touch your toes.</p>
+                    <p>Step 3: Hold the pose and relax.</p>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/a4/6a/61/a46a615bb0216b766802bbacb522c697.jpg" alt="Yoga Pose 9">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Plank Pose</p>
+                    <p>Step 1: Start in a push-up position.</p>
+                    <p>Step 2: Hold your body in a straight line.</p>
+                    <p>Step 3: Engage your core muscles.</p>
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://i.pinimg.com/236x/95/82/c9/9582c99a3df9465fd6e92865f154fd82.jpg" alt="Yoga Pose 10">
+                </div>
+                <div class="card-back">
+                    <p>Pose: Cat-Cow Pose</p>
+                    <p>Step 1: Start on hands and knees.</p>
+                    <p>Step 2: Alternate arching and rounding your back.</p>
+                    <p>Step 3: Synchronize your breath with the movements.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
