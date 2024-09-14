@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #E0F7FA;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #00796b;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .section {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideUp 1s ease forwards;
+        }
+        h2 {
+            color: #00796b;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            transition: color 0.3s ease;
+        }
+        h2:hover {
+            color: #004d40;
+        }
+        details {
+            margin-bottom: 20px;
+        }
+
+        summary {
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        summary:hover {
+            color: #00796b;
+        }
+
+       
+
+        .video-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 360px;
+            height: 220px;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-container iframe:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .therapy-session h2 {
+            color: #004d40;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; 
+                transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+       
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        main a:hover {
+            color: #b2dfdb;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .video-container iframe {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .section {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <a href="#therapy">Therapy Sessions</a>
+            <a href="#anxiety">Anxiety and Stress</a>
+            <a href="#bipolar">Bipolar Disorder</a>
+            <a href="#borderline">BPD</a>
+            <a href="#personality">Personality Disorder</a>
+            <a href="#dissociative">DID</a>
+            <a href="#narcissistic">Narcissistic Personality Disorder</a>
+            <a href="#schizophrenia">Schizophrenia</a>
+        </nav>
+    </header>
+
+    <section id="therapy" class="section">
+        <h2>Therapy Sessions</h2>
+        <p>Therapy can be a vital part of mental health recovery. Learn more about different types of therapy and how they can help.</p>
+        <div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/XDlWSR7Ohck?list=PLG1WzYaHQeh6JPLZcavyPLiz0ST4K406B" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/HklLoSB8iso?list=PLG1WzYaHQeh6JPLZcavyPLiz0ST4K406B&index=2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/5DnJifOaHQ0?list=PLG1WzYaHQeh6JPLZcavyPLiz0ST4K406B&index=3" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/HklLoSB8iso?list=PLG1WzYaHQeh6JPLZcavyPLiz0ST4K406B&index=4" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="anxiety" class="section">
+        <h2>Anxiety and Stress</h2>
+        <details>
+            <summary>What is Anxiety and Stress?</summary>
+            <p>Anxiety and stress are common mental health issues that can affect anyone. Anxiety involves feelings of worry, fear, and apprehension, while stress is a response to external pressures or demands.</p>
+        </details>
+        <div >
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/4hAEYHyLzRE?list=PLG1WzYaHQeh4Fzky9V_GYGwIvhFcmDl6G" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Uqrl-GIwEJ4?list=PLG1WzYaHQeh4Fzky9V_GYGwIvhFcmDl6G" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/DBevTJafdHQ?list=PLG1WzYaHQeh4Fzky9V_GYGwIvhFcmDl6G" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/LYra87pN1Xk?list=PLG1WzYaHQeh4Fzky9V_GYGwIvhFcmDl6G" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="bipolar" class="section">
+        <h2>Bipolar Disorder</h2>
+        <details>
+            <summary>What is Bipolar Disorder?</summary>
+            <p>Bipolar disorder is a mental health condition characterized by extreme mood swings that include emotional highs (mania or hypomania) and lows (depression).</p>
+        </details>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Kt239-EZddk?list=PLG1WzYaHQeh54yJPS0v7p8bifQiP6kZfa" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/J1Fg5pHysyg?list=PLG1WzYaHQeh54yJPS0v7p8bifQiP6kZfa" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="borderline" class="section">
+        <h2>Borderline Personality Disorder (BPD)</h2>
+        <details>
+            <summary>What is BPD?</summary>
+            <p>Borderline Personality Disorder (BPD) is a mental health disorder characterized by unstable moods, behavior, and relationships. It involves intense emotional experiences and difficulties in maintaining stable relationships.</p>
+        </details>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/acGcQQ1X74M?list=PLG1WzYaHQeh47Vf82lYQE1g0BPxSIxtZ5" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/E1Ph_wwk6bk?list=PLG1WzYaHQeh47Vf82lYQE1g0BPxSIxtZ5" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="personality" class="section">
+        <h2>Personality Disorder</h2>
+        <details>
+            <summary>What is Personality Disorder?</summary>
+            <p>Personality disorders are a type of mental health disorder where a person has a rigid and unhealthy pattern of thinking, functioning, and behaving. These patterns can cause significant problems and limitations in relationships and work.</p>
+        </details>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/oO1igfq1sRg?list=PLG1WzYaHQeh727JyJ394CQfMx2Dh5_GCK" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/YCPOBJmmbzE?list=PLG1WzYaHQeh727JyJ394CQfMx2Dh5_GCK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </div>
+    </section>
+
+    <section id="dissociative" class="section">
+        <h2>Dissociative Identity Disorder (DID)</h2>
+        <details>
+            <summary>What is DID?</summary>
+            <p>Dissociative Identity Disorder (DID) is a severe form of dissociation, a mental process used to cope with trauma. DID is characterized by the presence of two or more distinct personality states or identities.</p>
+        </details>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/A0kLjsY4JlU?list=PLG1WzYaHQeh4ANWbF7Oetrbjji-6jffFO" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/FjkGPskxl9g?list=PLG1WzYaHQeh4ANWbF7Oetrbjji-6jffFO" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="narcissistic" class="section">
+        <h2>Narcissistic Personality Disorder</h2>
+        <details>
+            <summary>What is Narcissistic Personality Disorder?</summary>
+            <p>Narcissistic Personality Disorder is a mental health disorder characterized by a long-term pattern of abnormal behavior that includes exaggerated feelings of self-importance, a need for excessive attention and admiration, and a lack of empathy for others.</p>
+        </details>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/n5EcQnnx6xE?list=PLG1WzYaHQeh7PYt_7BlmT6EKOQHqOee_z" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/zK8ENa0VQ6g?list=PLG1WzYaHQeh7PYt_7BlmT6EKOQHqOee_z" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="schizophrenia" class="section">
+        <h2>Schizophrenia</h2>
+        <details>
+            <summary>What is Schizophrenia?</summary>
+            <p>Schizophrenia is a serious mental disorder in which people interpret reality abnormally, leading to severe dysfunction in thought, perception, emotional regulation, and behavior.</p>
+        </details>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/TeBdPFYHKJM?list=PLG1WzYaHQeh7UElPL8VIFoGK-bTZ9vwqj" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/voXP15pHOhI" allowfullscreen></iframe>
+        </div>
+    </section>
+
+</body>
+</html>
