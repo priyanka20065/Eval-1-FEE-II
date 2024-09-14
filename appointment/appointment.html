@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Appointment</title>
+    <script src="https://kit.fontawesome.com/d688ab46b0.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/free-vector/psychiatrist-concept-mental-health-diagnostic-doctor-treating-mind-disease-with-psychiatry-psychological-support-vector-flat-illustration_613284-148.jpg');
+            background-repeat: no-repeat;
+            background-size: 600px 650px; 
+            background-position: right;
+            background-attachment: fixed; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+           
+        }
+        .navbar{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color:#a2caee;
+    }
+
+
+    .logo{
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .logo-text {
+       display: inline-block;
+        margin-left: 0 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        position: relative;
+    }
+
+    
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .navbar ul li a::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .navbar ul li a:hover::after{
+        width: 100%;
+    }
+
+
+        .appointment-form {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 18px;
+            box-shadow:15 15 15 25px rgba(0,0,0,0.2);
+            border-radius: 12px;
+            background:hwb(210 84% 4%);
+           
+            margin-left:20px;
+        }
+
+      
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+           
+        }
+        fieldset {
+            border: none;
+            margin-bottom: 20px;
+            padding: 20px;
+            background:hwb(210 84% 4%);
+            border-radius: 8px;
+            animation: fadeInFields 1s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="tel"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        input[type="time"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+        }
+
+        
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .payment-section {
+            margin-top: 30px;
+        }
+
+        .paypal-button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .paypal-button-container form {
+            display: inline-block;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .content1 {
+            flex: 1;
+        }
+
+        footer *
+        {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer {
+            color: black;
+            background-image:linear-gradient(#abd5fa,rgb(175, 174, 174));
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+            width: 100%;
+        }
+
+        .footer .menu li {
+            display: inline-block;
+            margin: 0.7em;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #ccc;
+            max-width: 25em;
+            font-size: 0.9em;
+            line-height: 23px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #009688;
+        }
+
+        footer .footer {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer .media-icons {
+            margin: 1.5em 0;
+            padding: 2em;
+        }
+
+        .footer .media-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer .media-icons a {
+            font-size: 1.5em;
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        .footer .media-icons a:hover {
+            color: #009688;
+        }
+
+        .brand {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 1em;
+            display: block;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .appointment-form {
+                margin: 20px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="logo.jpeg" class="logo" alt="MindCure Logo">
+            <span class="logo-text">MindCure</span>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">xxx</a></li>
+            <li><a href="#">yyy</a></li>
+        </ul>
+    </div>
+
+    <div class="appointment-form">
+        <h1>Schedule a Mental Health Appointment</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Contact Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Appointment Details</legend>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Visit:</label>
+                    <textarea id="reason" name="reason" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="professional">Type of Mental Health Professional:</label>
+                    <select id="professional" name="professional">
+                        <option value="psychologist">Psychologist</option>
+                        <option value="psychiatrist">Psychiatrist</option>
+                        <option value="therapist">Therapist</option>
+                    </select>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Mental Health History</legend>
+                <div class="form-group">
+                    <label for="symptoms">Current Symptoms:</label>
+                    <textarea id="symptoms" name="symptoms" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="diagnoses">Previous Diagnoses:</label>
+                    <textarea id="diagnoses" name="diagnoses" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="medications">Current Medications:</label>
+                    <textarea id="medications" name="medications" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="therapies">Past Therapies/Counseling:</label>
+                    <textarea id="therapies" name="therapies" rows="4"></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Emergency Contact Information</legend>
+                <div class="form-group">
+                    <label for="emergency-name">Emergency Contact Name:</label>
+                    <input type="text" id="emergency-name" name="emergency-name">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-phone">Emergency Contact Phone:</label>
+                    <input type="tel" id="emergency-phone" name="emergency-phone">
+                </div>
+                <div class="form-group">
+                    <label for="relationship">Relationship to Emergency Contact:</label>
+                    <input type="text" id="relationship" name="relationship">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Insurance and Payment Information</legend>
+                <div class="form-group">
+                    <label for="insurance">Insurance Provider (if applicable):</label>
+                    <input type="text" id="insurance" name="insurance">
+                </div>
+                <div class="form-group">
+                    <label for="referral">Referral Source (if applicable):</label>
+                    <input type="text" id="referral" name="referral">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Payment Information</legend>
+                <div class="form-group payment-section">
+                    <label>Payment Methods:</label>
+                    <div class="paypal-button-container">
+                        <!-- PayPal button integration will be here -->
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id">
+                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                        </form>
+                    </div>
+                    <div class="note">Note: Payments are processed securely through PayPal.</div>
+                </div>
+            </fieldset>
+            
+            <div class="form-group">
+                <input type="checkbox"  required>
+                <label for="consent">I consent to the terms and conditions.</label>
+            </div>
+            
+            <button type="submit">Submit Appointment Request</button>
+        </form>
+    </div>
+
+    <div class="content1">
+        
+    </div>
+
+    <footer class="footer">
+        <div class="footer1">
+            <a href="#" class="brand">Mind Cure</a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <ul class="media-icons">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p>Mind Cure is dedicated to helping individuals achieve mental wellness through personalized resources and support. Explore our platform to nurture your mental health</p>            
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
