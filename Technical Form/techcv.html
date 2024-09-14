@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tcv.css">
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+</head>
+<body>
+   
+    
+        <div class="container">
+        
+        
+        <form action="#" autocomplete="on">
+            
+            <h1 class = "form-titles">Application Job For Technician </h1>
+        <br> 
+           
+
+            <h1 class="form-title">Personal Information </h1>
+            <div class="main-user-info">
+
+                <div class ="user-input-box">
+                    <label for ="firstname">First Name </label>
+                    <input type="text" id="firstName"
+                    name="firstName"
+                    placeholder="Enter your First Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="lastname">Last Name </label>
+                    <input type="text" id="lastName"
+                    name="lastName"
+                    placeholder="Enter your Last Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="fathername">Father's Name </label>
+                    <input type="text" id="fathername"
+                    name="fathername"
+                    placeholder="Enter your Father's Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="mothername">Mother's Name </label>
+                    <input type="text" id="mothername"
+                    name="mothername"
+                    placeholder="Enter your Mother's Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="phoneNumber">Phone-Number</label>
+                    <input type="tel" id="phoneNumber"
+                    name="phoneNumber" pattern="[0-9]{5}-[0-9]{5}" maxlength="10"
+                    placeholder="Enter your PhoneNumber"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="email">E-mail</label>
+                    <input type="email" id="email"
+                    name="email"
+                    placeholder="Enter your e-mail"/>
+                </div>
+                
+                <div class ="user-input-box">
+                    <label for ="dob">Date of Birth</label>
+                    <input type="date" id="dob"
+                    name="dob" max="01-01-2007"
+                    placeholder="Enter your Date of Birth"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Address1">Address 1 </label>
+                    <input type="text" id="Address1"
+                    name="Address1"
+                    placeholder="Street"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Address2">Address 2 </label>
+                    <input type="text" id="Address2"
+                    name="Address2"
+                    placeholder="City"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Address3">Address 3 </label>
+                    <input type="number" id="Address3"
+                    name="Address3" size="6" maxlength="6"
+                    placeholder="Postal Code"/>
+                </div> 
+        
+            <div class="gender">
+                <span class="gender-title"> Gender</span>
+                <div class="gender-category">
+                    <input type ="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type ="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type ="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            </div>
+            
+
+            <h1 class="form-title">Professional Information </h1>
+            <div class="main-user-info">
+                <fieldset>
+                    <legend> Undergraduate Degree</legend>
+
+                <div class ="user-input-box">
+                    <label for ="Inst1"> Institution Name  </label>
+                    <input type="text" id="Inst1"
+                    name="Inst1"
+                    placeholder="Institution Name"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Deg1"> Degree  Name  </label>
+                    <input type="text" id="Deg1"
+                    name="Deg1"
+                    placeholder="Degree Obtained"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Loc1"> Location  </label>
+                    <input type="text" id="Loc1"
+                    name="Loc1"
+                    placeholder="Location"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="year1"> Graduation year  </label>
+                    <input type="number" id="year1"
+                    name="year1" size="4" maxlength="4"
+                    placeholder="Graduation Year"/>
+                </div>
+        </fieldset>
+
+        <fieldset>
+                    <legend> Postgraduate Degree</legend>
+
+                <div class ="user-input-box">
+                    <label for ="Inst2"> Institution Name  </label>
+                    <input type="text" id="Inst2"
+                    name="Inst2"
+                    placeholder="Institution Name"/>
+                </div>
+
+                <div class ="user-input-box">
+                    <label for ="Deg2"> Degree  Name  </label>
+                    <input type="text" id="Deg2"
+                    name="Deg2"
+                    placeholder="Degree Obtained"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Loc2"> Location  </label>
+                    <input type="text" id="Loc3"
+                    name="Loc3"
+                    placeholder="Location"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="year2"> Graduation year  </label>
+                    <input type="number" id="year2"
+                    name="year2" size="4" maxlength="4"
+                    placeholder="Graduation Year"/>
+                </div>
+        </fieldset>
+
+        <fieldset>
+                    <legend>Projects & Portfolio</legend>
+
+                <div class ="user-input-box">
+                    <label for ="Inst3"> Role in Project   </label>
+                    <input type="text" id="Inst3"
+                    name="Inst3"
+                    placeholder="Role in Project "/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="Loc3"> Technologies </label>
+                    <input type="text" id="Loc3"
+                    name="Loc3"
+                    placeholder="Technologies Used"/>
+                </div>
+                <div class ="user-input-box">
+                    <label for ="year3"> Description of Key Projects </label>
+                    <textarea id="year3" rows="3" cols="10" placeholder="Description"></textarea>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> Experience </legend>
+
+        <div class ="user-input-box">
+            <label for ="Inst4"> Job Title  </label>
+            <input type="text" id="Inst4"
+            name="Inst4"
+            placeholder="Previous or Current Job "/>
+        </div>
+        <div class ="user-input-box">
+            <label for ="Loc4"> Company  </label>
+            <input type="text" id="Loc4"
+            name="Loc4"
+            placeholder="Name of Company"/>
+        </div>
+        <div class ="user-input-box">
+            <label for ="year4"> Achievements  </label>
+            <textarea id="year4" rows="3" cols="5" placeholder="Duration & Key Responsibilties"></textarea>
+
+            
+        </div>
+</fieldset>
+
+<fieldset>
+    <legend> Technical Skills</legend>
+
+<div class ="user-input-box">
+    <label for ="pr"> Programming Languages</label>
+    <textarea id="pr" rows="3" cols="5" placeholder="e.g.,JavaScript,Python etc."></textarea>
+</div>
+<div class ="user-input-box">
+    <label for ="fr"> Framework & Libraries</label>
+    <textarea id="fr" rows="3" cols="5" placeholder="e.g.,React,Angular etc."></textarea>
+</div>
+<div class ="user-input-box">
+    <label for ="tool"> Tools and Software </label>
+    <textarea id="tool" rows="3" cols="5" placeholder="e.g.,Git,Docker etc."></textarea>
+</div>
+<div class ="user-input-box">
+    <label for ="others"> Relevant Skills </label>
+    <textarea id="others" rows="3" col="5" placeholder=" Any other relevant technical skills e.g.,Database,Cybersecurity etc."></textarea>
+</div>
+</fieldset>
+<fieldset>
+    <legend> Soft Skills  </legend>
+    <div class="user-input-box">
+    <textarea id = "Area"
+    name="Area" rows="10" cols="10"
+    placeholder=" Soft skills "></textarea></div>
+
+    <div class ="user-input-box">
+        <label for ="com"> Communication </label>
+        <textarea id="com" rows="3" cols="5" placeholder=" Languauges"></textarea>
+    </div>
+
+    <div class ="user-input-box">
+        <label for ="com"> Problem Solving  </label>
+        <textarea id="com" rows="3" cols="5" placeholder="Approach"></textarea>
+    </div>
+
+    </fieldset>
+
+    <div class="user-input-box">
+<label for="homepage">Add your Git/Portfolio Link :</label>
+  <input type="url" id="homepage" name="homepage">
+  <input type="submit" value="Submit"></div>
+  
+  &emsp; &emsp; &emsp;
+<div class ="user-input-box">
+    <label for ="proof"> Please Attach all your proofs  </label>
+    <input type="file" id="proof"
+    name="proof" multiple >
+</div>
+&emsp;&emsp;
+
+  <div class="form-submit-btn">
+    <input type="reset" value="Reset">
+</div>
+ 
+            
+            <div class="form-submit-btn">
+                <input type="submit" value="Apply">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
